@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Chatbot for TCP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cyber-container">
+        <div class="hologram-effect">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="neon-text">TCP-Chatbot v2.3.1</div>
+                    <div class="status-indicator"></div>
+                </div>
+                
+                <div class="chat-messages" id="chat-window">
+                    <div class="ai-message">
+                        <div class="message-bubble ai">
+                            <span class="ai-pulse">🌀</span> Initializing neural network... Ready to explore the cosmos!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <textarea id="user-input" placeholder="Transmit your message..." 
+                             rows="1" autofocus></textarea>
+                    <button id="send-btn" class="cyber-button">
+                        <span class="glow-text">TRANSMIT</span>
+                        <span class="laser-edge"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cyber-terminal">
+            <div class="terminal-header">SYSTEM STATUS</div>
+            <div id="terminal-output" class="terminal-content"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
