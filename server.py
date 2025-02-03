@@ -2,6 +2,14 @@ from fastapi import FastAPI, WebSocket
 from fastapi.staticfiles import StaticFiles
 from ollama import AsyncClient
 import asyncio
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app = FastAPI()
 
